@@ -1,0 +1,3 @@
+CouchDb adapter based on ActiveResource
+
+set self.site to the CouchDb database path, eg http://localhost:5984/blog
