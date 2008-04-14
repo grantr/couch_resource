@@ -13,10 +13,5 @@ module CouchResource
       end
     end
 
-    def find_single(scope, options)
-      prefix_options, query_options = split_options(options[:params])
-      path = element_path(scope, prefix_options, query_options)
-      instantiate_record(connection.get(path, headers), prefix_options)
-    end
   end
 end
